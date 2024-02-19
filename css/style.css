@@ -13,7 +13,7 @@ header {
 }
 
 nav {
-    background: rgb(0, 0, 0);
+    background: rgb(45, 188, 55);
     grid-area: nav;
     display: flex;
     justify-content: space-evenly;
@@ -27,14 +27,18 @@ footer {
     justify-content: center;
     align-items: end;
     font-size: 50px;
+    
     color: white;
 }
-
 #grid_wrapper_1 {
-    height: 100px;
-    grid-template-columns: 
-    grid-template-rows: 
+    height: 150px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 400px 200px minmax(100px,1fr);
     grid-template-areas: 
+    "hea"
+    "nav"
+    "se_1_1"
+    "foo"
 }
 
 
@@ -66,38 +70,40 @@ footer {
 
 
 @media screen and (max-width: 800px) {
-
+    #grid_wrapper_1 {
+        height: 150px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 100px 100px;
+        grid-template-areas: 
+        "nav"
+        "se_1_1"
+        "foo"
+    }
+    
+    
+    #grid_wrapper_2 {
+        height: 100px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 
+        grid-template-areas: 
+    }
+    
+    
+    
+    #grid_wrapper_3 {
+        height:100px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 
+        grid-template-areas: 
+    }
+    
+    
+    
+    #grid_wrapper_4 {
+        height:
+        grid-template-columns: 1fr;
+        grid-template-rows: 
+        grid-template-areas: 
+    }
 }
 
-#grid_wrapper_1 {
-    height: 100px;
-    grid-template-columns: 1fr;
-    grid-template-rows: 
-    grid-template-areas: 
-}
-
-
-#grid_wrapper_2 {
-    height: 100px;
-    grid-template-columns: 1fr;
-    grid-template-rows: 
-    grid-template-areas: 
-}
-
-
-
-#grid_wrapper_3 {
-    height:100px;
-    grid-template-columns: 1fr;
-    grid-template-rows: 
-    grid-template-areas: 
-}
-
-
-
-#grid_wrapper_4 {
-    height:
-    grid-template-columns: 1fr;
-    grid-template-rows: 
-    grid-template-areas: 
-}
