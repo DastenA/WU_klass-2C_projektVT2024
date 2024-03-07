@@ -58,6 +58,11 @@ a {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+.logo {
+    width: 200px;
+    height: 150px;
+}
+
 #grid_wrapper_1 {
     display: grid;
     height: 100vh;
