@@ -12,16 +12,17 @@ header {
 }
 
 nav {
-    background: rgb(45, 188, 55);
+    background: rgb(255, 255, 255);
     grid-area: nav;
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     list-style: none;
     position: sticky;
     top: 0;
     z-index: 1;
+    flex-direction: column;
 }
 
 footer {
@@ -35,7 +36,14 @@ footer {
 
 a {
     text-decoration: none;
+    font-size: 10px;
 }
+li {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
 
 .img {
     width: 300px;
@@ -44,7 +52,7 @@ a {
 }
 
 .text_se_1 {
-    font-size: 30px;
+    font-size: 2rem;
     text-align: center;
     grid-row: 2;
 }
@@ -68,27 +76,26 @@ a {
 }
 
 .logo {
-    width: 200px;
-    height: 150px;
+    width: 50px;
+    height: 35px;
 }
 
 #grid_wrapper_1 {
     display: grid;
     height: 100vh;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px 50px 300px 500px 300px minmax(100px,1fr);
+    grid-template-columns: 1fr 8fr 8fr;
+    grid-template-rows: 100px 300px 500px 300px minmax(100px,1fr);
     grid-template-areas: 
-    "hea hea"
-    "nav nav"
-    "se_1_1 se_1_1"
-    "se_1_2 se_1_3"
-    "se_1_4 se_1_4"
-    "foo foo"
+    "hea hea hea"
+    "nav se_1_1 se_1_1"
+    "nav se_1_2 se_1_3"
+    "nav se_1_4 se_1_4"
+    "foo foo foo"
 }
 
 #se_1_1 {
     grid-area: se_1_1;
-    background-color: blueviolet;
+    background-color: rgb(195, 33, 84);
     position: relative;
     justify-content: space-evenly;
     display: grid;
@@ -99,17 +106,17 @@ a {
 
 #se_1_2 {
     grid-area: se_1_2;
-    background-color: rgb(0, 225, 255);
+    background-color: rgb(195, 33, 84);
 }
 
 #se_1_3 {
     grid-area: se_1_3;
-    background-color: rgb(154, 195, 7);
+    background-color: rgb(195, 33, 84);
 }
 
 #se_1_4 {
     grid-area: se_1_4;
-    background-color: rgb(255, 162, 0);
+    background-color: rgb(195, 33, 84);
 }
 
 
@@ -150,14 +157,18 @@ a {
         display: none;
     }
 
+
     nav {
-        height: 50px;
-        position:fixed;
+        background: rgb(45, 188, 55);
+        grid-area: nav;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style: none;
+        position: sticky;
         top: 0;
-    }
-
-    img {
-
+        z-index: 1;
     }
 
     #grid_wrapper_1 {
