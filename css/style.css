@@ -113,6 +113,7 @@ li {
 
 .text_page_1 {
     font-size: 20px;
+    padding: 10px;
 }
 
 #grid_wrapper_1 {
@@ -160,9 +161,25 @@ li {
 #grid_wrapper_2 {
     display: grid;
     height: 100vh;
-    grid-template-columns: 
-    grid-template-rows: 
+    grid-template-columns: 1fr 9fr;
+    grid-template-rows: 100px 300px 300px minmax(100px,1fr);
     grid-template-areas: 
+    "hea hea"
+    "nav se_2_1"
+    "nav se_2_2"
+    "foo foo"
+}
+
+#se_2_1 {
+    grid-area: se_2_1;
+}
+
+#se_2_2 {
+    grid-area: se_2_2;
+}
+
+#se_2_3 {
+    grid-area: se_2_3;
 }
 
 
