@@ -24,6 +24,10 @@ header {
     margin: 10px;
 }
 
+#sign_in {
+    text-decoration: underline;
+    font-size: 20px;
+}
 .page_logo {
     width: 70px;
     height: 60px;
@@ -107,11 +111,15 @@ li {
 
 }
 
+.text_page_1 {
+    font-size: 20px;
+}
+
 #grid_wrapper_1 {
     display: grid;
     height: 100vh;
-    grid-template-columns: 1fr 8fr 8fr;
-    grid-template-rows: 100px 300px 300px 300px minmax(100px,1fr);
+    grid-template-columns: 1fr 10fr 10fr;
+    grid-template-rows: 100px 300px 500px 500px 500px minmax(100px,1fr);
     grid-template-areas: 
     "hea hea hea"
     "nav se_1_1 se_1_1"
@@ -134,17 +142,17 @@ li {
 
 #se_1_2 {
     grid-area: se_1_2;
-    background-color: rgb(195, 33, 84);
+    background-color: rgb(174, 0, 55);
 }
 
 #se_1_3 {
     grid-area: se_1_3;
-    background-color: rgb(195, 33, 84);
+    background-color: rgb(174, 0, 55);
 }
 
 #se_1_4 {
     grid-area: se_1_4;
-    background-color: rgb(195, 33, 84);
+    background-color: rgb(174, 0, 55);
 }
 
 
