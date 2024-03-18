@@ -6,9 +6,28 @@
 
 header {
     grid-area: hea;
-    background-color: rgb(223, 202, 202);
-    justify-content: center;
-    align-items: center;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px;
+    grid-template-areas: 
+    "hea_se_1 hea_se_2"
+}
+
+#hea_se_1 {
+    grid-area: hea_se_1;
+}
+
+#hea_se_2 {
+    grid-area: hea_se_2;
+    text-align: end;
+    margin: 10px;
+}
+
+.page_logo {
+    width: 70px;
+    height: 60px;
+    margin: 10px;
 }
 
 nav {
@@ -18,8 +37,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
     list-style: none;
-    position: sticky;
     top: 0;
     z-index: 1;
     flex-direction: column;
@@ -41,9 +60,8 @@ a {
 li {
     display: flex;
     flex-direction: row;
-    margin: 10px;
+    margin: 20px;
 }
-
 
 .img {
     width: 300px;
@@ -55,47 +73,57 @@ li {
     font-size: 2rem;
     text-align: center;
     grid-row: 2;
+    border: 2px solid black;
+    margin: 5px;
 }
-
-
 
 .home_list {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 2px solid black;
+    padding: 5px;
 }
 
 .video_list {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 2px solid black;
+    padding: 5px;
 }
 
 .movie_list {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 2px solid black;
+    padding: 5px;
 }
 
 .board_list {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: 2px solid black;
+    padding: 5px;
 }
 
 .logo {
-    width: 50px;
-    height: 35px;
+    width: 40px;
+    height: 30px;
+
 }
 
 #grid_wrapper_1 {
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 8fr 8fr;
-    grid-template-rows: 100px 300px 500px 300px minmax(100px,1fr);
+    grid-template-rows: 100px 300px 300px 300px minmax(100px,1fr);
     grid-template-areas: 
     "hea hea hea"
     "nav se_1_1 se_1_1"
-    "nav se_1_2 se_1_3"
+    "nav se_1_2 se_1_2"
+    "nav se_1_3 se_1_3"
     "nav se_1_4 se_1_4"
     "foo foo foo"
 }
 
 #se_1_1 {
     grid-area: se_1_1;
-    background-color: rgb(195, 33, 84);
+    background-color: rgb(174, 0, 55);
     position: relative;
     justify-content: space-evenly;
     display: grid;
@@ -118,7 +146,6 @@ li {
     grid-area: se_1_4;
     background-color: rgb(195, 33, 84);
 }
-
 
 
 
