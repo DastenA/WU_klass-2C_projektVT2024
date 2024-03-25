@@ -8,10 +8,10 @@ header {
     grid-area: hea;
     background-color: rgb(255, 255, 255);
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 100px;
     grid-template-areas: 
-    "hea_se_1 hea_se_2"
+    "hea_se_1 hea_se_2 hea_se_3"
 }
 
 #hea_se_1 {
@@ -20,14 +20,27 @@ header {
 
 #hea_se_2 {
     grid-area: hea_se_2;
-    text-align: end;
+    text-align: center;
+}
+
+#hea_se_3 {
+    grid-area: hea_se_3;
+    position: relative;
     margin: 10px;
 }
 
 #sign_in {
-    text-decoration: underline;
+    position: absolute;
+    right: 0;
     font-size: 20px;
+    border: 2px solid black;
+   
 }
+
+#title {
+    font-size: 60px;
+}
+
 .page_logo {
     width: 70px;
     height: 60px;
@@ -67,11 +80,18 @@ li {
     margin: 20px;
 }
 
-.img {
+.main_img {
     width: 300px;
     height: 200px;
     grid-row: 1;
 }
+
+.img_text_1 {
+    width: 400px;
+    height: 300px;
+    margin-top: 20px;
+}
+
 
 .text_se_1 {
     font-size: 2rem;
@@ -144,16 +164,29 @@ li {
 #se_1_2 {
     grid-area: se_1_2;
     background-color: rgb(174, 0, 55);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 500px;
+    grid-template-areas: 
+    "#se_1_2_1 #se_1_2_2 #se_1_2_3"
 }
+
+
 
 #se_1_3 {
     grid-area: se_1_3;
     background-color: rgb(174, 0, 55);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 #se_1_4 {
     grid-area: se_1_4;
     background-color: rgb(174, 0, 55);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 
@@ -211,7 +244,7 @@ li {
 
 
     nav {
-        background: rgb(45, 188, 55);
+        background: rgb(255, 255, 255);
         grid-area: nav;
         width: 100%;
         display: flex;
