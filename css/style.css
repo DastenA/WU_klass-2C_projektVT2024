@@ -8,7 +8,7 @@ body {
     background-color: black;
 }
 
-#header_movie {
+.header_second {
     background-color: lightblue;
 }
 header {
@@ -58,7 +58,7 @@ header {
     background-color: rgb(174, 0, 55);
   }
 
-  .topnav_movie {
+  .topnav_second {
     overflow: hidden;
     background-color: lightblue;
   }
@@ -92,8 +92,15 @@ a {
 }
 li {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: 20px;
+
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+
 }
 
 .main_img {
@@ -422,6 +429,7 @@ li {
 #grid_wrapper_4 {
     display: grid;
     height: 100vh;
+    gap: 2px;
     grid-template-columns: 1fr 9fr 9fr;
     grid-template-rows: 100px 1000px 1000px 1000px minmax(100px,1fr);
     grid-template-areas: 
@@ -489,7 +497,7 @@ li {
         background: rgb(255, 255, 255);
         grid-area: nav;
         width: 100%;
-        display: flex;
+        display: grid;
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
@@ -502,7 +510,7 @@ li {
     #grid_wrapper_1 {
         height: 200vh;
         grid-template-columns: 1fr;
-        grid-template-rows: 50px 50px 300px 500px 350px 350px minmax(100px,1fr);
+        grid-template-rows: 100px 50px 300px 500px 350px 350px minmax(100px,1fr);
         grid-template-areas: 
         "hea"
         "nav"
@@ -514,7 +522,7 @@ li {
     }
 
     #se_1_1 {
-        
+        grid-area: se_1_1;
     }
 
     #se_1_2 {
