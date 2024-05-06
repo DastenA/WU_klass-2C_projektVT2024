@@ -58,7 +58,7 @@ header {
     background-color: rgb(174, 0, 55);
   }
 
-  .topnav_second {
+.topnav_second {
     overflow: hidden;
     background-color: lightblue;
   }
@@ -67,15 +67,15 @@ nav {
     background: rgb(255, 255, 255);
     grid-area: nav;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
     align-items: center;
     text-align: center;
     list-style: none;
     top: 0;
-    z-index: 1;
     flex-direction: column;
 }
+
+
 
 footer {
     grid-area: foo;
@@ -98,7 +98,9 @@ li {
 }
 
 ul {
+    height: 100%;
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
 
 }
@@ -281,7 +283,7 @@ ul {
     height: 100vh;
     gap: 2px;
     grid-template-columns: 1fr 10fr 10fr;
-    grid-template-rows: 100px 1000px 1000px 1000px minmax(100px,1fr);
+    grid-template-rows: 100px 1200px 1200px 1200px minmax(100px,1fr);
     grid-template-areas: 
     "hea hea hea"
     "nav se_2_1 se_2_1"
@@ -303,6 +305,7 @@ ul {
     text-align: center;
     background-color: grey;
     margin: 50px;    
+    margin-bottom: 10px;
 }
 
 #se_2_1 {
@@ -310,19 +313,49 @@ ul {
     background-color: rgb(174, 0, 55);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 350px;
+    grid-template-rows: 1200px;
     grid-template-areas: 
     "se_2_1_1 se_2_1_2"
-    }
+}
 
     
 #se_2_1_1 {
     grid-area: se_2_1_1;
+    margin: 10px;
+    padding: 10px;
 }
 
 #se_2_1_2 {
     grid-area: se_2_1_2;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 500px;
+    grid-template-areas: 
+    "se_2_1_2_1"
+    "se_2_1_2_2"
+    "se_2_1_2_3"
 }
+
+.arrow {
+    width: 75px;
+    height: auto;
+    margin: 5px;
+}
+
+#se_2_1_2_1 {
+    grid-area: se_2_1_2_1;
+    display: flex;
+    align-items: center;
+}
+
+#se_2_1_2_2 {
+    grid-area: se_2_1_2_2;
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+
 
 
 #se_2_2 {
@@ -330,7 +363,7 @@ ul {
     background-color: rgb(174, 0, 55);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 350px;
+    grid-template-rows: 1200px;
     grid-template-areas: 
     "se_2_2_1 se_2_2_2"
     }
@@ -387,7 +420,7 @@ ul {
 
 .movie_text {
     border: 2px solid black;
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
     background-color: grey;
     margin: 50px;    
@@ -486,7 +519,9 @@ ul {
 }
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
+    * {
+    }
 
     header {
         background-color: rgb(174, 0, 55);
@@ -494,23 +529,24 @@ ul {
 
 
     nav {
-        background: rgb(255, 255, 255);
-        grid-area: nav;
-        width: 100%;
-        display: grid;
+        display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+        position: relative;
+    }
+
+    ul {
+        display: flex;
         align-items: center;
-        list-style: none;
-        position: sticky;
-        top: 0;
-        z-index: 1;
+        top: 0px;
+        flex-direction: row;
+        position: absolute;
     }
 
     #grid_wrapper_1 {
         height: 200vh;
         grid-template-columns: 1fr;
-        grid-template-rows: 100px 50px 300px 500px 350px 350px minmax(100px,1fr);
+        grid-template-rows: 100px 50px 300px 500px 500px 500px minmax(100px,1fr);
         grid-template-areas: 
         "hea"
         "nav"
@@ -520,29 +556,12 @@ ul {
         "se_1_4"
         "foo"
     }
-
-    #se_1_1 {
-        grid-area: se_1_1;
-    }
-
-    #se_1_2 {
-        grid-area: se_1_2;
-        background-color: rgb(174, 0, 55);
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 500px;
-        grid-template-areas: 
-        "se_1_2_1"
-        "se_1_2_2"
-        "se_1_2_3"
-    }
- 
-
+    
     
     #grid_wrapper_2 {
         height: 200vh;
         grid-template-columns: 1fr;
-        grid-template-rows: 50px 50px 1000px 1000px 1000px 1000px minmax(100px,1fr);
+        grid-template-rows: 100px 50px 1200px 1200px 1200px 1200px minmax(100px,1fr);
         grid-template-areas: 
         "hea"
         "nav"
@@ -555,10 +574,17 @@ ul {
 
 
     #grid_wrapper_3 {
-        height: 100vh;
+        height: 200vh;
         grid-template-columns: 1fr;
-        grid-template-rows: 
+        grid-template-rows: 100px 50px 1500px 1500px 1500px 1500px minmax(100px,1fr);
         grid-template-areas: 
+        "hea"
+        "nav"
+        "se_3_1"
+        "se_3_2"
+        "se_3_3"
+        "se_3_4"
+        "foo"
     }
     
     
