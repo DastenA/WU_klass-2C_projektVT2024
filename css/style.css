@@ -100,7 +100,6 @@ li {
 ul {
     height: 100%;
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
 
 }
@@ -321,8 +320,7 @@ ul {
     
 #se_2_1_1 {
     grid-area: se_2_1_1;
-    margin: 10px;
-    padding: 10px;
+
 }
 
 #se_2_1_2 {
@@ -519,9 +517,7 @@ ul {
 }
 
 
-@media screen and (max-width: 800px) {
-    * {
-    }
+@media screen and (max-width: 600px) {
 
     header {
         background-color: rgb(174, 0, 55);
@@ -556,27 +552,60 @@ ul {
         "se_1_4"
         "foo"
     }
-    
+
+
     
     #grid_wrapper_2 {
         height: 200vh;
         grid-template-columns: 1fr;
-        grid-template-rows: 100px 50px 1200px 1200px 1200px 1200px minmax(100px,1fr);
+        grid-template-rows: 100px 50px 1800px 1800px 1800px  minmax(100px,1fr);
         grid-template-areas: 
         "hea"
         "nav"
         "se_2_1"
         "se_2_2"
         "se_2_3"
-        "se_2_4"
         "foo"
+    }
+
+    #se_2_1 {
+        grid-area: se_2_1;
+        background-color: rgb(174, 0, 55);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 700px 1100px;
+        grid-template-areas: 
+        "se_2_1_1"
+        "se_2_1_2"
+    }
+
+    #se_2_2 {
+        grid-area: se_2_2;
+        background-color: rgb(174, 0, 55);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 700px 1100px;
+        grid-template-areas: 
+        "se_2_2_1"
+        "se_2_2_2"
+    }
+
+    #se_2_3 {
+        grid-area: se_2_3;
+        background-color: rgb(174, 0, 55);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 700px 1100px;
+        grid-template-areas: 
+        "se_2_3_1"
+        "se_2_3_2"
     }
 
 
     #grid_wrapper_3 {
         height: 200vh;
         grid-template-columns: 1fr;
-        grid-template-rows: 100px 50px 1500px 1500px 1500px 1500px minmax(100px,1fr);
+        grid-template-rows: 100px 50px 1800px 1800px 1800px  minmax(100px,1fr);
         grid-template-areas: 
         "hea"
         "nav"
@@ -586,14 +615,53 @@ ul {
         "se_3_4"
         "foo"
     }
-    
+
+    #se_3_1 {
+        grid-area: se_3_1;
+        background-color: lightblue;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 700px 1100px;
+        grid-template-areas: 
+        "se_3_1_1"
+        "se_3_1_2"
+    }
+
+    #se_3_2 {
+        grid-area: se_3_2;
+        background-color: lightblue;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 700px 1100px;
+        grid-template-areas: 
+        "se_3_2_1"
+        "se_3_2_2"
+    }
+
+    #se_3_3 {
+        grid-area: se_3_3;
+        background-color: lightblue;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 700px 1100px;
+        grid-template-areas: 
+        "se_3_3_1"
+        "se_3_3_2"
+    }
     
     
     #grid_wrapper_4 {
-        height: 100vh;
+        height: 200vh;
         grid-template-columns: 1fr;
-        grid-template-rows: 
+        grid-template-rows: 100px 50px 1500px 1500px 1500px  minmax(100px,1fr);
         grid-template-areas: 
+        "hea"
+        "nav"
+        "se_4_1"
+        "se_4_2"
+        "se_4_3"
+        "se_4_4"
+        "foo"
     }
 }
 
