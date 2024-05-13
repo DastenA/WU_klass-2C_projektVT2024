@@ -8,9 +8,6 @@ body {
     background-color: black;
 }
 
-.header_second {
-    background-color: lightblue;
-}
 header {
     grid-area: hea;
     background-color: rgb(174, 0, 55);
@@ -58,10 +55,6 @@ header {
     background-color: rgb(174, 0, 55);
   }
 
-.topnav_second {
-    overflow: hidden;
-    background-color: lightblue;
-  }
 
 nav {
     background: rgb(255, 255, 255);
@@ -74,7 +67,6 @@ nav {
     top: 0;
     flex-direction: column;
 }
-
 
 
 footer {
@@ -282,7 +274,7 @@ ul {
     height: 100vh;
     gap: 2px;
     grid-template-columns: 1fr 10fr 10fr;
-    grid-template-rows: 100px 1200px 1200px 1200px minmax(100px,1fr);
+    grid-template-rows: 100px 1200px 1000px 1000px minmax(100px,1fr);
     grid-template-areas: 
     "hea hea hea"
     "nav se_2_1 se_2_1"
@@ -327,7 +319,7 @@ ul {
     grid-area: se_2_1_2;
     align-items: center;
     grid-template-columns: 1fr;
-    grid-template-rows: 500px;
+    grid-template-rows: 550px 100px 550px;
     grid-template-areas: 
     "se_2_1_2_1"
     "se_2_1_2_2"
@@ -361,7 +353,7 @@ ul {
     background-color: rgb(174, 0, 55);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1200px;
+    grid-template-rows: 1000px;
     grid-template-areas: 
     "se_2_2_1 se_2_2_2"
     }
@@ -380,7 +372,7 @@ ul {
     background-color: rgb(174, 0, 55);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 350px;
+    grid-template-rows: 1000px;
     grid-template-areas: 
     "se_2_3_1 se_2_3_2"
     }
@@ -409,8 +401,8 @@ ul {
 }
 
 .movie_img {
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 450px;
     margin: 100px;
     border: 2px solid black;
 }
@@ -427,30 +419,30 @@ ul {
 
 #se_3_1 {
     grid-area: se_3_1;
-    background-color: lightblue;
+    background-color: rgb(174, 0, 55);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 350px;
+    grid-template-rows: 1000px;
     grid-template-areas: 
     "se_3_1_1 se_3_1_2"
 }
 
 #se_3_2 {
     grid-area: se_3_2;
-    background-color: lightblue;
+    background-color: rgb(174, 0, 55);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 350px;
+    grid-template-rows: 1000px;
     grid-template-areas: 
     "se_3_2_1 se_3_2_2"
 }
 
 #se_3_3 {
     grid-area: se_3_3;
-    background-color: lightblue;
+    background-color: rgb(174, 0, 55);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 350px;
+    grid-template-rows: 1000px;
     grid-template-areas: 
     "se_3_3_1 se_3_3_2"
 }
@@ -488,7 +480,7 @@ ul {
 
 #se_4_1 {
     grid-area: se_4_1;
-    background-color: lightblue;
+    background-color: rgb(174, 0, 55);
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 350px;
@@ -498,7 +490,7 @@ ul {
 
 #se_4_2 {
     grid-area: se_4_2;
-    background-color: lightblue;
+    background-color: rgb(174, 0, 55);
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 350px;
@@ -508,7 +500,7 @@ ul {
 
 #se_4_3 {
     grid-area: se_4_3;
-    background-color: lightblue;
+    background-color: rgb(174, 0, 55);
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 350px;
@@ -517,7 +509,7 @@ ul {
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
 
     header {
         background-color: rgb(174, 0, 55);
@@ -554,6 +546,8 @@ ul {
     }
 
 
+
+
     
     #grid_wrapper_2 {
         height: 200vh;
@@ -570,7 +564,6 @@ ul {
 
     #se_2_1 {
         grid-area: se_2_1;
-        background-color: rgb(174, 0, 55);
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 700px 1100px;
@@ -581,7 +574,6 @@ ul {
 
     #se_2_2 {
         grid-area: se_2_2;
-        background-color: rgb(174, 0, 55);
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 700px 1100px;
@@ -592,7 +584,6 @@ ul {
 
     #se_2_3 {
         grid-area: se_2_3;
-        background-color: rgb(174, 0, 55);
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 700px 1100px;
@@ -618,7 +609,6 @@ ul {
 
     #se_3_1 {
         grid-area: se_3_1;
-        background-color: lightblue;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 700px 1100px;
@@ -629,7 +619,6 @@ ul {
 
     #se_3_2 {
         grid-area: se_3_2;
-        background-color: lightblue;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 700px 1100px;
@@ -640,7 +629,6 @@ ul {
 
     #se_3_3 {
         grid-area: se_3_3;
-        background-color: lightblue;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 700px 1100px;
@@ -653,15 +641,47 @@ ul {
     #grid_wrapper_4 {
         height: 200vh;
         grid-template-columns: 1fr;
-        grid-template-rows: 100px 50px 1500px 1500px 1500px  minmax(100px,1fr);
+        grid-template-rows: 100px 50px 1800px 1800px 1800px  minmax(100px,1fr);
         grid-template-areas: 
         "hea"
         "nav"
         "se_4_1"
         "se_4_2"
         "se_4_3"
-        "se_4_4"
         "foo"
     }
+
+
+    #se_4_1 {
+        grid-area: se_4_1;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 900px 900px;
+        grid-template-areas: 
+        "se_4_1_1"
+        "se_4_1_2"
+    }
+
+    #se_4_2 {
+        grid-area: se_4_2;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 800px 1000px;
+        grid-template-areas: 
+        "se_4_2_1"
+        "se_4_2_2"
+    }
+
+    #se_4_3 {
+        grid-area: se_4_3;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 800px 1000px;
+        grid-template-areas: 
+        "se_4_3_1"
+        "se_4_3_2"
+    }
+
+    
 }
 
