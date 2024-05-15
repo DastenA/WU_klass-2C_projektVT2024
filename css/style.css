@@ -545,9 +545,6 @@ ul {
         "foo"
     }
 
-
-
-
     
     #grid_wrapper_2 {
         height: 200vh;
@@ -650,7 +647,6 @@ ul {
         "se_4_3"
         "foo"
     }
-
 
     #se_4_1 {
         grid-area: se_4_1;
