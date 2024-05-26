@@ -85,6 +85,7 @@ footer {
     font-size: 3rem;
 }
 
+
 a {
     text-decoration: none;
     font-size: 10px;
@@ -109,15 +110,6 @@ ul {
     grid-row: 1;
 }
 
-.img_text_1 {
-    width: 400px;
-    height: 300px;
-    margin-top: 20px;
-    border: 2px solid black;
-
-}
-
-
 .text_se_1 {
     font-size: 2rem;
     text-align: center;
@@ -126,6 +118,15 @@ ul {
     margin: 5px;
     text-decoration: none;
 }
+
+.img_text_1 {
+    width: 400px;
+    height: 300px;
+    margin-top: 20px;
+    border: 2px solid black;
+
+}
+
 
 .home_list {
     border: 2px solid black;
@@ -200,7 +201,10 @@ ul {
     justify-content: space-evenly;
     display: grid;
     align-content: center;
+    text-align: center;
     padding: 10px;
+    grid-template-areas:
+    "se_1_1_1 se_1_1_2 se_1_1_3"
 
 }
 
@@ -572,11 +576,10 @@ ul {
         height: 200vh;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 100px 50px 1000px 1400px 1400px 1400px minmax(100px,1fr);
+        grid-template-rows: 100px 50px 1400px 1400px 1400px minmax(100px,1fr);
         grid-template-areas: 
         "hea"
         "nav"
-        "se_1_1"
         "se_1_2"
         "se_1_3"
         "se_1_4"
@@ -587,7 +590,6 @@ ul {
         width: 700px;
         height: 500px;
         border: 2px solid black;
-        display: flex;
     }
 
     .main_img {
@@ -595,20 +597,12 @@ ul {
         height: 300px;
     }    
 
-    #se_1_1 {
-        grid-area: se_1_1;
-        background-color: rgb(174, 0, 55);
-        grid-template-columns: 1fr;
-        grid-template-rows: 333px 333px 333px;
-        grid-template-areas: 
-        "se_1_1_1"
-        "se_1_1_2"
-        "se_1_1_3"
 
+    #se_1_1 {
+        display: none;
     }
 
     #se_1_2 {
-        grid-area: se_1_2;
         background-color: rgb(174, 0, 55);
         grid-template-columns: 1fr;
         grid-template-rows: 400px 600px 400px;
@@ -619,17 +613,15 @@ ul {
     }
 
     #se_1_2_2 {
-        grid-area: se_1_2_2;
         display: grid;
         align-items: center;
     }
 
     #se_1_3 {
-        grid-area: se_1_3;
         background-color: rgb(174, 0, 55);
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 400px 600px 400px;
+        grid-template-rows: 450px 500px 450px;
         grid-template-areas: 
         "se_1_3_1"
         "se_1_3_2"
@@ -637,7 +629,6 @@ ul {
     }
 
     #se_1_4 {
-        grid-area: se_1_4;
         background-color: rgb(174, 0, 55);
         display: grid;
         grid-template-columns: 1fr;
@@ -647,8 +638,6 @@ ul {
         "se_1_4_2"
         "se_1_4_3"
     }
-
-    
 
     
     #grid_wrapper_2 {
@@ -665,7 +654,6 @@ ul {
     }
 
     #se_2_1 {
-        grid-area: se_2_1;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 700px 1100px;
@@ -675,7 +663,6 @@ ul {
     }
 
     #se_2_2 {
-        grid-area: se_2_2;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 800px 1000px;
@@ -685,7 +672,6 @@ ul {
     }
 
     #se_2_3 {
-        grid-area: se_2_3;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 800px 1000px;
@@ -710,7 +696,6 @@ ul {
     }
 
     #se_3_1 {
-        grid-area: se_3_1;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 700px 1100px;
@@ -720,7 +705,6 @@ ul {
     }
 
     #se_3_2 {
-        grid-area: se_3_2;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 750px 950px;
@@ -730,7 +714,6 @@ ul {
     }
 
     #se_3_3 {
-        grid-area: se_3_3;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 750px 950px;
@@ -755,7 +738,6 @@ ul {
     }
 
     #se_4_1 {
-        grid-area: se_4_1;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 900px 900px;
@@ -765,7 +747,6 @@ ul {
     }
 
     #se_4_2 {
-        grid-area: se_4_2;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 800px 1000px;
@@ -775,7 +756,6 @@ ul {
     }
 
     #se_4_3 {
-        grid-area: se_4_3;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 800px 1000px;
